@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvEnterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/enter_players_name"
+        android:textColor="@color/black"
+        android:background="@color/teal_200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FF03DAC0"
+        android:textSize="26sp"
+        android:backgroundTint="@color/black"
+        android:textStyle="bold|italic|normal"
+        android:hint="@string/player_1_name"
+        app:layout_constraintEnd_toEndOf="@+id/tvEnterName"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/tvEnterName"
+        app:layout_constraintTop_toBottomOf="@+id/tvEnterName"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/etPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic|normal"
+        android:layout_marginTop="50dp"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#FF03DAC0"
+        android:backgroundTint="@color/black"
+        android:hint="@string/player_2_name"
+        app:layout_constraintEnd_toEndOf="@+id/etPlayer1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer1"
+        tools:ignore="Autofill,TextFields" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_marginTop="100dp"
+        android:background="@color/teal_700"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/etPlayer2"
+        app:layout_constraintStart_toStartOf="@+id/etPlayer2"
+        app:layout_constraintTop_toBottomOf="@+id/etPlayer2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
